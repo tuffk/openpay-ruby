@@ -1,4 +1,5 @@
 # coding: utf-8
+
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
@@ -19,7 +20,7 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec)/})
   spec.require_paths = ['lib','lib/openpay','openpay','.']
 
-  spec.add_runtime_dependency 'rest-client'  , '~>2.0'
+  spec.add_runtime_dependency 'rest-client', '~>3.0'
   spec.add_runtime_dependency 'json'
 
   spec.add_development_dependency 'bundler', '~> 1.3'
